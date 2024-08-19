@@ -16,7 +16,7 @@ const Footer = () => {
                 </div>
 
                 <div className="mt-[65px]  relative flex items-center justify-center">
-                    <input required type="search" name="" id="" placeholder='Enter your email' className='h-[60px] w-[380px] ps-[30px] rounded-[5px] bg-white bg-opacity-[0.08] placeholder:text-white placeholder:text-[16px] placeholder:font-normal placeholder:leading-[50px] outline-none placeholder:opacity-[0.5] text-[20px] text-white' />
+                    <input required type="email" name="" id="" placeholder='Enter your email' className='h-[60px] w-[380px] ps-[30px] rounded-[5px] bg-white bg-opacity-[0.08] placeholder:text-white placeholder:text-[16px] placeholder:font-normal placeholder:leading-[50px] outline-none placeholder:opacity-[0.5] text-[20px] text-white' />
                     <button className='text-[18px] text-[#FFFFFF] font-normal leading-[50px] tracking-[-0.5px] ms-[15px] opacity-[0.8] py-[5px] px-[25px] bg-[#CC8663] rounded-[4px]'>Subscribe us</button>
                     <img src={footerImg1} alt="footer1" className=' absolute bottom-[-30px] left-[50px]'/>
                     <img src={footerImg2} alt="footer2" className=' absolute bottom-[20px] right-[50px]'/>

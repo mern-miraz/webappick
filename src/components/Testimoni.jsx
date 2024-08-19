@@ -47,7 +47,7 @@ const Testimoni = () => {
                 </div>
                 <div className="">
                 <Slider {...settings}>
-                    <div className="w-[413px] flex justify-center shadow-lg">
+                    <div className="w-[413px] tstimoni flex justify-center shadow-lg">
                         <div className="mt-[49px] text-center">
                             <img src={testiImg} alt="testi1" className='text-center mx-auto' />
                             <div className=" flex justify-center text-[#FF9100] mt-[16px] gap-x-2">

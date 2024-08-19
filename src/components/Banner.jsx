@@ -10,10 +10,10 @@ import { HiArrowUpRight } from "react-icons/hi2";
 
 const Banner = () => {
   return (
-    <section id='' className='bg-[#245D51] pt-[110px]'>
-        <Container className="pt-[50px]">
+    <section id='' className='bg-[#245D51] pt-[250px]'>
+        <Container className="">
             <div className=" flex justify-between">
-                <div className=" w-[60%] pr-[300px] mt-[30px]">
+                <div className=" w-[60%] pr-[150px] mt-[-30px]">
                     <div className="">
                         <h3 
                         className='text-[60px] font-semibold text-[#FFFFFF]'>
