@@ -5,15 +5,15 @@ import { GrFormCheckmark } from "react-icons/gr";
 
 const Price = () => {
   return (
-    <section id='' className='py-[50px]'>
+    <section id='' className='lg:py-[50px]'>
         <Container>
             <div className="">
                 <div className="text-center">
-                    <h3 className='text-[36px] text-[#2C2C2C] font-semibold'><span className='text-[#CB8461]'>Subscribe</span> with us now</h3>
-                    <p className='text-[16px] text-[#808080] font-normal leading-[35px] w-[545px] mx-auto'>by subscribing now you will be able to access the material easily and cheaply, so you will be very efficient and benefit</p>
+                    <h3 className='lg:text-[36px] text-[18px] text-[#2C2C2C] font-semibold'><span className='text-[#CB8461]'>Subscribe</span> with us now</h3>
+                    <p className='lg:text-[16px] text-[12px] leading-[30px] text-[#808080] font-normal lg:leading-[35px] lg:w-[43%] w-full mt-4 mx-auto'>by subscribing now you will be able to access the material easily and cheaply, so you will be very efficient and benefit</p>
                 </div>
 
-                <div className="mt-[50px] flex justify-between w-[850px] mx-auto">
+                <div className="mt-[50px] flex justify-center gap-x-2 lg:w-[72%] w-full mx-auto flex-wrap">
 
                     <div className="group w-[292px] ps-[30px] pr-3 py-[33px] hover:bg-[#245D51] duration-500 ease-in-out rounded-[26px] hover:scale-110 shadow-xl hover:shadow-greenShadow">
                         <span className='text-[36px] text-[#2C2C2C] font-bold group-hover:text-white duration-500 ease-in-out'>$50 <span className='text-[16px] text-[#808080] font-normal leading-[35px] group-hover:text-white duration-500 ease-in-out'>/ 1 month</span></span>

@@ -12,27 +12,36 @@ import { HiOutlineArrowRight, HiOutlineArrowLeft  } from "react-icons/hi";
 function SampleNextArrow(props) {
     const { onClick } = props;
     return (
-      <div onClick={onClick} className=' absolute bottom-[-100px] right-[45%]'> <HiOutlineArrowRight className='text-[20px] text-[#0C111F] hover:text-white h-[54px] w-[54px] rounded-full hover:bg-[#CB8461] p-3 bg-[#FFFFFF] duration-500 ease-in-out cursor-pointer'/> </div>
+      <div onClick={onClick} className=' absolute bottom-[-100px] lg:right-[45%] right-[30%]'> <HiOutlineArrowRight className='text-[20px] text-[#0C111F] hover:text-white h-[54px] w-[54px] rounded-full hover:bg-[#CB8461] p-3 bg-[#FFFFFF] duration-500 ease-in-out cursor-pointer'/> </div>
     );
   }
   
   function SamplePrevArrow(props) {
     const {onClick } = props;
     return (
-      <div onClick={onClick} className=' absolute bottom-[-100px] left-[45%] z-40'> <HiOutlineArrowLeft className='text-[20px] text-[#0C111F] hover:text-white h-[54px] w-[54px] rounded-full hover:bg-[#CB8461] p-3 bg-[#FFFFFF] duration-500 ease-in-out cursor-pointer'/> </div>
+      <div onClick={onClick} className=' absolute bottom-[-100px] lg:left-[45%] left-[30%] z-40'> <HiOutlineArrowLeft className='text-[20px] text-[#0C111F] hover:text-white h-[54px] w-[54px] rounded-full hover:bg-[#CB8461] p-3 bg-[#FFFFFF] duration-500 ease-in-out cursor-pointer'/> </div>
     );
   }
 
   const settings = {
     className: "center",
     centerMode: true,
-    centerPadding: "60px",
+    centerPadding: "0px",
     dots: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+        {
+          breakpoint: 640,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
   };
 
 
@@ -42,12 +51,12 @@ const Testimoni = () => {
         <Container>
             <div className="">
                 <div className=" text-center">
-                    <h3 className='text-[36px] text-[#2C2C2C] font-semibold '>What do they <span className='text-[#CB8461]'>say?</span></h3>
-                    <h4 className='text-[16px] text-[#808080] font-normal leading-[35px]'>This is an honest review from members who have joined us</h4>
+                    <h3 className='lg:text-[36px] text-[18px] text-[#2C2C2C] font-semibold '>What do they <span className='text-[#CB8461]'>say?</span></h3>
+                    <h4 className='text-[16px] text-[#808080] font-normal leading-[35px] mt-4'>This is an honest review from members who have joined us</h4>
                 </div>
                 <div className="">
                 <Slider {...settings}>
-                    <div className="w-[413px] tstimoni flex justify-center shadow-lg">
+                    <div className="w-[413px] tstimoni flex justify-center shadow-lg pb-6">
                         <div className="mt-[49px] text-center">
                             <img src={testiImg} alt="testi1" className='text-center mx-auto' />
                             <div className=" flex justify-center text-[#FF9100] mt-[16px] gap-x-2">
@@ -62,7 +71,7 @@ const Testimoni = () => {
                         </div>
                     </div>
 
-                    <div className="w-[413px] flex justify-center shadow-lg">
+                    <div className="w-[413px] flex justify-center shadow-lg pb-6">
                         <div className="mt-[49px] text-center">
                             <img src={testiImg2} alt="testi2" className='text-center mx-auto' />
                             <div className=" flex justify-center text-[#FF9100] mt-[16px] gap-x-2">
@@ -77,7 +86,7 @@ const Testimoni = () => {
                         </div>
                     </div>
 
-                    <div className="w-[413px] flex justify-center shadow-lg">
+                    <div className="w-[413px] flex justify-center shadow-lg pb-6">
                         <div className="mt-[49px] text-center">
                             <img src={testiImg3} alt="testi3" className='text-center mx-auto' />
                             <div className=" flex justify-center text-[#FF9100] mt-[16px] gap-x-2">
