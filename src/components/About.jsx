@@ -2,6 +2,7 @@ import React from 'react'
 import Container from './Container'
 import aboutImg from "../assets/about.png"
 import aboutImg1 from "../assets/about1.png"
+import aboutImg2 from "../assets/banner2.png"
 import { FiUser, FiUserCheck  } from "react-icons/fi";
 import { BiVideoRecording } from "react-icons/bi";
 import { CgPlayButtonO } from "react-icons/cg";
@@ -44,7 +45,14 @@ const About = () => {
                 </div>
                 <div className="lg:w-[535px] w-full lg:ms-[150px] lg:mt-[98px]">
                     <div className="">
+                      <div className=" relative inline-block">
                       <h2 className='lg:text-[48px] text-[20px] text-[#2C2C2C] font-bold'>Let us <span className='text-[#245D51]'>Skill Shoot</span></h2>
+
+                      <div className=" absolute -bottom-1 right-0 lg:w-auto w-[62%]">
+                        <img src={aboutImg2} alt="banner2" />
+                      </div>
+                      </div>
+                      
                       <p className='lg:text-[16px] text-[14px] text-[#808080] font-normal leading-[30px] lg:leading-[35px] mt-[27px]'>We are a company engaged in education with the aim of improving the skills of many people and so that younger people can reach the career paths they want.
                       </p>
                       <p className='lg:text-[16px] text-[14px] text-[#808080] font-normal leading-[35px] mt-[25px]'>we have been around since 2019 with currently 100+ updated materials and 15K members who have joined.</p>

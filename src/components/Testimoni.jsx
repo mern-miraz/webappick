@@ -100,6 +100,21 @@ const Testimoni = () => {
                             <p className='text-[16px] text-[#808080] leading-[35px] font-normal mt-[10px] px-[45px]'>I am quite satisfied, because the skills I want or dream of can really be mastered</p>
                         </div>
                     </div>
+                    
+                    <div className="w-[413px] flex justify-center shadow-lg pb-6">
+                        <div className="mt-[49px] text-center">
+                            <img src={testiImg3} alt="testi3" className='text-center mx-auto' />
+                            <div className=" flex justify-center text-[#FF9100] mt-[16px] gap-x-2">
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                            </div>
+                            <h3 className='text-[24px] text-[#2C2C2C] font-normal mt-[20px]'>Alexa Nowan</h3>
+                            <p className='text-[16px] text-[#808080] leading-[35px] font-normal mt-[10px] px-[45px]'>I am quite satisfied, because the skills I want or dream of can really be mastered</p>
+                        </div>
+                    </div>
                 </Slider>
                     
                 </div>

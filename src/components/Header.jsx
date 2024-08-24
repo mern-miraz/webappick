@@ -53,17 +53,17 @@ const Header = () => {
                 </div>
 
                 <div className="w-1/4 hidden lg:block justify-end">
-                    <ul className=' flex text-[#FFFFFF] text-[18px] font-normal leading-[35px]'>
+                    <ul className=' flex text-[#FFFFFF] text-[18px] font-normal leading-[35px] justify-end gap-x-5'>
                         <li className=''>
                             <a 
                             href="#" 
-                            className='py-[7px] px-[25px] hover:bg-[#CB8461] rounded-[8px] duration-300 ease-in-out'>Login</a>
+                            className=''>Login</a>
                         </li>
 
                         <li className=''>
                             <a 
                             href="#" 
-                            className='py-[7px] px-[30px] hover:bg-[#CB8461] rounded-lg duration-300 ease-in-out'>Register</a>
+                            className='py-[7px] px-[30px] bg-[#CB8461] rounded-lg duration-300 ease-in-out'>Register</a>
                         </li>
                     </ul>
                 </div>

@@ -4,6 +4,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaTwitter, FaDiscord  } from "react-icons/fa6";
 import bannerImg from "../assets/banner.png"
 import bannerImg1 from "../assets/banner1.png"
+import bannerImg2 from "../assets/banner2.png"
 import { HiArrowUpRight } from "react-icons/hi2";
 import { BiSolidPencil } from "react-icons/bi";
 import { MdOutlinePlayCircle } from "react-icons/md";
@@ -16,11 +17,12 @@ import { LuCalendarDays } from "react-icons/lu";
 
 const Banner = () => {
   return (
-    <section id='' className='bg-[#245D51] lg:pt-[150px]'>
+    <section id='' className='bg-[#245D51] lg:pt-[150px] pb-10 lg:pb-0'>
         <Container className="">
             <div className=" flex justify-between">
-                <div className=" lg:w-3/5 w-full lg:pr-[150px] text-center lg:text-start lg:mt-28 mt-0">
-                    <div className="">
+                <div className=" lg:w-3/5 w-full lg:pr-[150px] text-center lg:text-start lg:mt-6 mt-0">
+                    <div className=" relative">
+                        <img src={bannerImg2} alt="banner2" className=' absolute lg:top-[88px] top-[37px] lg:right-[163px] right-[54px] lg:w-auto w-[31%]' />
                         <h3 
                         className='lg:text-[60px] text-[28px] font-semibold text-[#FFFFFF]'>
                             There is always something new for us to learn</h3>
